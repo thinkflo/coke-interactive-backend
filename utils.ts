@@ -4,7 +4,7 @@ import * as ffmpeg from 'fluent-ffmpeg'
 
 const Config = require('../config.json');
 /*
-The config.json file contain authToken, accountSid, sourcePhone, englishMsg, & FrenchMsg variables.  Structure as:
+The config.json file contain productionURL, authToken, accountSid, sourcePhone, englishMsg, & FrenchMsg variables.  Structure as:
     {
         "productionURL" : "https://[production host here]/",
         "accountSid" : "[Twilio Account SID here]",
@@ -23,7 +23,7 @@ function execute(command, callback){
 };
 
 const fileFilter = function (req, file, cb) {
-    // accept image only
+    // accepted types only
     if (!file.originalname.match(/\.(mp4|mpeg4|flv|jpg|jpeg|png|gif)$/)) {
         return cb(new Error('Files type not allowed'), false);
     }
