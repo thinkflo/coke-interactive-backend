@@ -8,8 +8,9 @@ The app processes form uploaded FLVs and applies a boomerang effect, crops, wate
 
 1. Install ffmpeg using `sudo yum install ffmpeg` on Centos 7 or `brew install ffmpeg` on OSX
 2. Install [nodejs](https://nodejs.org/en/) (version 5+) and [npm].
-3. Go to project directory, run `npm install` to install dependancies.
-4. Add the mandatory `config.json` in project directory with the following structure:
+3. Clone this repo `git clone https://github.com/thinkflo/coke-interactive-backend.git`
+3. Go to project directory `cd coke-interactive-backend`, and run `npm install` to install dependancies.
+4. Using an editor, add the mandatory `config.json` file in project directory with the following structure:
 ```
     {
         "productionURL" : "https://[production host here]/",
@@ -21,7 +22,7 @@ The app processes form uploaded FLVs and applies a boomerang effect, crops, wate
     }
 ```
 5. Start the application, run `npm start`.
-6. Go to `localhost:3000`
+6. Go to `localhost:3000` in a webbrowser.
 
 ## API End Points
 
