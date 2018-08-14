@@ -9,7 +9,7 @@ The app processes form uploaded FLVs and applies a boomerang effect, crops, wate
 1. Install ffmpeg using `sudo yum install ffmpeg` on Centos 7 or `brew install ffmpeg` on OSX
 2. Install [nodejs](https://nodejs.org/en/) (version 5+) and [npm].
 3. Go to project directory, run `npm install` to install dependancies.
-4. Add the mandatory `config.json` with the following structure:
+4. Add the mandatory `config.json` in project directory with the following structure:
 ```
     {
         "productionURL" : "https://[production host here]/",
