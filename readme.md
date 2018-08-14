@@ -2,7 +2,7 @@
 
 The app processes form uploaded FLVs and applies a boomerang effect, crops, watermarks, and creates and hosts a downloadable permalink and then sends MMS/SMS message info via Twilio API. The application is served behind a reverse NGINX proxy and daemonized using PM2.  
 
-###REQUIREMENT: FFMPEG must be compiled with the libx264 video codec and be accessible in the global search path.
+**REQUIREMENT: FFMPEG must be compiled with the libx264 video codec and be accessible in the global search path.**
 
 1. Install ffmpeg using `sudo yum install ffmpeg` on Centos 7 or `brew install ffmpeg` on OSX
 2. Install [nodejs](https://nodejs.org/en/) (version 5+) and [npm].
@@ -20,7 +20,7 @@ The app processes form uploaded FLVs and applies a boomerang effect, crops, wate
 
 Please add the mandatory `config.json` in the parent directory with the following structure:
 
-`
+```
     {
         "productionURL" : "https://[production host here]/",
         "accountSid" : "[Twilio Account SID here]",
@@ -29,4 +29,4 @@ Please add the mandatory `config.json` in the parent directory with the followin
         "englishMsg" : "[English Msg here in UTF-8. No HTML Entities]",
         "frenchMsg" : "[French Msg here in UTF-8. No HTML Entities]"
     }
-`
+```

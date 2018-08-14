@@ -46,6 +46,7 @@ function databaseInitialize() {
 process.on('SIGINT', function() {
     console.log("flushing database");
     db.close();
+    process.exit();
 });
 
 // app
