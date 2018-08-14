@@ -1,4 +1,4 @@
-# ExpressJS app for an Interactive CocaCola Kiosk as part of the #depcocacola campaign using NodeJS, ExpressJS, Mutler, LokiDB, Typescript, & Fluent-FFMPEG. 
+# ExpressJS app for an Interactive CocaCola Kiosk as part of the #depcocacola campaign using NodeJS, ExpressJS, Mutler, LokiJS, Typescript, & Fluent-FFMPEG. 
 
 The app processes form uploaded FLVs and applies a boomerang effect, crops, watermarks, and creates and hosts a downloadable permalink and then sends MMS/SMS message info via Twilio API. The application is served behind a reverse NGINX proxy and daemonized using PM2.  
 

@@ -13,7 +13,7 @@ import * as ffmpeg from 'fluent-ffmpeg'
 const { exec } = require('child_process');
 exec('ffmpeg -loglevel panic -codecs | grep libx264', (err) => {
   if (err) {
-    console.log("ERROR: Application halted.  ffmpeg is not in the seaarch path, or the libx264 codec is not bundled with it.  Please correct and relaunch.")
+    console.log("ERROR: Application halted.  ffmpeg is not in the search path, or the libx264 codec is not bundled with it.  Please correct and relaunch.")
     process.exit();
   }
 });
